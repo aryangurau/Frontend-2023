@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{width: 200px; height: 200px; background: purple; position: absolute; animation-name: move; animation-duration: 5s; animation-iteration-count: infinite; animation-direction: alternate ;
+        /* alternate,alternate-reverse, rversenormal*/
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        
+        
+        ;} 
+
+        @keyframes move{
+        0%, from{left:0; top: 0; background: green;}
+        50%{left: 300px; top: 100px;}
+        100%, to{ left: 600px; top:0;}
+    }
+
+
+    .box1{ width: 150px; height: 150px; background: linear-gradient(rgba(0, 128, 0, 0.404), red, aqua, rgba(128, 0, 128, 0.364)); transform: perspective(1000px) rotateY(20deg); animation-name: a; animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear;}
+    @keyframes a
+    {
+        0%{transform: perspective(1000px) rotateY(0deg);}
+        100%{transform: perspective(1000px) rotateY(360deg);}
+    }
+    </style>
+</head>
+<body>
+   
+    <div class="box">aryan</div>
+    <div class="box1"></div>
+</body>
+</html>

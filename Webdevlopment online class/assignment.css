@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    background: gray;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(60, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+section
+{
+    background: gray url(images/img.jpg);
+  
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    
+    padding: 30%;
+
+}
+.p{
+ justify-content: center;
+ display: flex;
+
+}
+.middle{
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    text-align: center;
+}
+
+
+.imgcontainer
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 90px;
+    background: white;
+}
+.img1
+{
+    background-image: url(images/img.jpg);
+    padding: 120px;
+    background-position: center;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    
+}
+.img2
+{
+    background-image: url(images/img.jpg);
+    padding: 120px;
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+.img3
+{
+    background-image: url(images/img.jpg);
+    padding: 120px;
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+footer{
+    background:gray;
+    
+}
+.boxes{
+    display: flex;
+    background-color:gray;
+    padding: 20px;
+    justify-content: space-between;
+}
+.box1{
+    background-image: url(images/img.jpg);
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+   
+}
+
+.box2
+{
+    background-image: url(images/img.jpg);
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.box3
+{
+    background-image: url(images/img.jpg);
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.text
+{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 25px;
+}
+

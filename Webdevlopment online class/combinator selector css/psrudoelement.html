@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        .box::before{content: 'aryan';background: red;}
+        .box::after{ content: 'Gurau'; background: orange;} 
+        ::selection{background:pink; color:purple}
+
+::placeholder{color:yellow;}
+p::first-letter{font-size: 66px;}
+p::first-line{background: slateblue;}
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita assumenda cum corrupti quia autem voluptatem sapiente, pariatur officiis voluptates?</p>
+    <input type="text" name="" placeholder="Enter your name">
+    <ul><li>Home</li></ul>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

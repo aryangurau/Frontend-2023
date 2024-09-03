@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <style>
+        main {
+            width: 200px;
+            background: blue !important;
+            height: 200px;
+            background: orangered;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: red;
+            transition: 0.9s;
+            transform: perspective(1000px) rotate3d(1, 0, 0 30deg);
+        }
+
+        main:hover .box {
+            transform: perspective(1000px) rotateX(180deg);
+        }
+
+        main:hover .box {
+            transform: perspective(1000px) rotateY(180deg);
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            transition: 0.9s;
+            transform: perspective(1000px) rotateY(30deg) translateZ(0px);
+        }
+
+        main:hover .box1 {
+            transform: perspective(1000px) rotateY(30deg) translateZ(400px);
+        }
+
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            transition: 0.9s;
+            transform: perspective(1000px) scaleZ(1) rotateX(30deg);
+        }
+
+        main:hover .box2 {
+            transform: perspective(100px) scaleZ(2) rotateX(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- x-axis -->
+    <main>
+        <div class="box">aryan gurau</div>
+    </main>
+    <hr>
+    <!-- y-axis -->
+    <main>
+        <div class="box">aryan gurau</div>
+    </main>
+    <hr>
+<!-- translate -->
+    <main>
+        <div class="box1">aryan gurau</div>
+    </main>
+    <hr>
+    <!-- scale rotate -->
+    <main>
+        <div class="box2">aryan</div>
+    </main>
+</body>
+
+</html>

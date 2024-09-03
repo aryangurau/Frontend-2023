@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danimation-timing</title>
+
+    <style>
+        .box{ width: 100px; height: 50px; background: aqua; border: 2px solid black; position: relative;animation: m 3s forwards;}
+
+@keyframes m{
+
+    0%{left: 0;}
+    100%{left: 500px;}
+}
+
+
+
+    .a{ animation-timing-function: ease;}
+    .b{ animation-timing-function: linear;}
+    .c{ animation-timing-function: ease-in;}
+    .d{ animation-timing-function: ease-out;}
+    .e{ animation-timing-function: ease-in-out;}
+    .f{ animation-timing-function: steps(4, end);}
+
+    </style>
+</head>
+<body>
+    
+    <div class="box a">ease</div>
+    <div class="box b">linear</div>
+    <div class="box c">ease-in</div>
+    <div class="box d">ease-out</div>
+    <div class="box e">ease-in-out</div>
+    <div class="box f">steps</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in jS</title>
+</head>
+<body>
+    <h1>This is <span>selector</span> tag</h1> <h1>other</h1>
+    <div class="demo">This is class</div>
+    <div id="demo">This is ID</div>
+
+    <script>
+
+        //note=we can acces using getElementsByclass,tagname or use querySelector
+
+
+
+// var a = document.getElementsByTagName('h1')[0].innerHTML
+// console.log(a)
+console.log(document.querySelector('h1').innerHTML)
+console.log(document.querySelectorAll('h1')[1].innerHTML)
+
+// var b=document.getElementsByClassName('demo')[0].innerHTML
+// console.log(b)  
+console.log(document.querySelector('.demo').innerHTML)
+
+// var c=document.getElementById('demo').innerHTML
+// console.log(c)
+console.log(document.querySelector('#demo').innerHTML)
+
+
+    </script>
+</body>
+</html>

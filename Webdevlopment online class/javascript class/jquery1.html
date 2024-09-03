@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery scroll</title>
+    <style>
+    body{
+        height: 1900px;
+
+    }
+    header{
+        background: blue; padding: 90px ; transition: 0.9s;
+    }
+    .ss{ 
+        position: fixed; width: 100%; top: 0; left: 0; background: green; animation: fadeIn 2s; 
+     }
+    @keyframes fadeIn {
+         0%{transform:translateY(-100%) } 
+         100%{transform: translateY(0%);} 
+    }
+
+    .video{ background: yellow; width: 200px; height: 100px; position: fixed;   bottom:-200px;left:0; transition: 0.9s; cursor: progress;
+    } 
+    .aa{ bottom: 0;}
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="video"><span>X</span></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function()
+    {
+        if($(this).scrollTop()>150){
+            $('header').addClass('ss');
+            $('.video').addClass('aa');
+        }
+        else
+        {
+            $('header').removeClass('ss');
+            $('.video').removeClass('aa');
+        }
+    })
+    $('span').click(function(){
+        $('.video').removeClass('aa');
+    })
+    </script>
+
+   
+</body>
+</html>

@@ -1,0 +1,33 @@
+.a{
+    background: yellow;
+    color: red;
+    width: 200px;
+    height: 200px;
+    border-width: 10px 30px;
+    border-color:red;
+    border-style: solid;
+    box-sizing:border-box;
+    outline:10px dashed green ;
+    border-radius:100px 100px 0 100px;
+}
+.b{
+    background: aqua;
+    color: red;
+    width: 200px;
+    height: 200px;
+    border:20px solid brown;
+    box-sizing:border-box;
+}
+
+.box{
+    border:30px solid ;
+    border-color: blue yellow green red;
+width: 200px;
+height:200px;
+}
+.traingle{
+    border:30px solid;
+    border-color: green transparent transparent transparent;
+    width: 0px;
+    height: 30px;
+}

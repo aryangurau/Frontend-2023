@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+ul
+{
+    list-style-type: none;
+}
+ul li:hover{
+    background-color: #2196f3;
+      
+}
+.con{
+    width: 1200px;
+    margin:  auto;
+   
+   
+}
+.top{
+    background:#2196f3;
+    padding: 10px 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+
+}
+
+.banner{
+    background:#2196f3;
+   
+}
+.ultimate {
+    padding: 120px;
+}
+h4{
+    font-size: 12px;
+    padding-left:80px;
+}
+h1{
+    font-size: 40px;
+}
+span{
+    color: purple;
+    padding-left: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    text-shadow:black;
+}
+
+.logo{
+    padding: 35px ;
+}
+button{
+    background-color: #05744b; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    padding: 6px 85px;
+}
+
+button:hover{
+    background-color: #21f36b;
+}
+.product
+{
+    text-align:  center;
+    padding: 20px;
+}
+.gallery{
+    padding: 50px;
+}
+.a{
+    text-align: center;
+}

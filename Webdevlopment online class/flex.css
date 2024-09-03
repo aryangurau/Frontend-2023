@@ -1,0 +1,73 @@
+.box
+{
+    border:2px solid black;
+    padding: 40px;
+}
+.container
+{
+    display: flex;
+    background: aquamarine;
+    justify-content: start;
+    /*start,end, center, space-between,space-around, space-evenly */
+    height: 450px;
+    align-items: start;
+    /*stretch, start, end, center, baseline */
+    
+}
+.b{
+    font-size: 66px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+   width: 1200px;
+    background: aqua;
+    margin: 0 auto;
+    
+}
+.header{
+  background: skyblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav
+{
+    background: rgb(165, 135, 235);
+    padding: 15px;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.nav a{
+    text-decoration: none;
+    color: azure;
+  
+}
+section{
+    display: flex;
+    padding: 20px;
+    gap:20px;
+
+}
+
+main{
+    background: pink;
+    padding: 20px;
+    line-height: 2;
+}
+footer{
+    background: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-CSS with jS</title>
+    <style>
+
+        .w{color:rebeccapurple; background: green; padding: 40px;}
+    </style>
+</head>
+<body>
+    <h1>Thi is Demo</h1>
+
+    <button onclick="document.querySelector('h1').style.backgroundColor='red' ">backgroundColor</button>
+    
+    
+    <button onclick="document.querySelector('h1').style.fontSize='80px'">FontSize</button>
+
+    
+    <button onclick="document.querySelector('h1').style.marginLeft='44px' ">MarginLeft</button>
+
+    
+    <button onclick="document.querySelector('h1').classList.add('w')">ADDclasslist</button>
+   
+    
+    <button onclick="document.querySelector('h1').classList.remove('w')">removeclasslist</button>
+
+    <button onclick="document.querySelector('h1').classList.toggle('w')">toggleclasslist</button>
+
+    <button onclick="aa()">ALL</button>
+
+    <script>
+        function aa() 
+        {
+            let q=document.querySelector('h1')
+            q.style.backgroundColor='red'
+            q.style.color='yellow'
+            q.style.padding='44px'
+        }
+    </script>
+</body>
+</html>

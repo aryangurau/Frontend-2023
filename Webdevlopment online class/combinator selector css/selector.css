@@ -1,0 +1,25 @@
+p
+{
+    color: red;
+}
+/* descendent selector(space) */
+.box p{
+    background: green;
+}
+/* child selector */
+.box > p{
+    text-transform: uppercase;
+}
+.box + p
+{
+text-decoration: underline;
+}
+.box ~ p
+
+{
+    font-size: 55px ;
+}
+.san
+{
+    font-size: 40px;
+}

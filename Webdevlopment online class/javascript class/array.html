@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array in JS</title>
+</head>
+<body>
+    <script>
+
+        let fruits=["apple", "banana", "kiwi","dragonfruit", "watermelon"]
+        let color= new Array("red", "green","white")
+        
+        console.log(fruits[3])
+        console.log(fruits.length)
+        for ( var a=0; a<fruits.length; a++)
+        {
+            console.log(fruits[a])
+        }
+
+        for(const item of color)
+        {
+            console.log("for of",item)
+        }
+        for(const item in fruits)
+        {
+            console.log("for in", fruits[item])
+        }
+
+//modifying array elements 
+fruits[1]="red banana"
+console.log(fruits)
+
+
+//Adding the new  elements in array
+fruits.push("orange")  //adds element at last
+console.log(fruits)
+
+fruits.unshift("applecyder")  //adds element at first
+console.log(fruits)
+
+//removing the array elements
+fruits.pop()  //removes last element
+console.log(fruits)
+fruits.shift() //removes first element
+console.log(fruits)
+
+
+//(find , filter, map)
+
+//using find
+var age=[3,45,10,2,20,22,27]
+
+var finddata=age.find(function(a){ 
+    return 16<a
+} )
+console.log("find",finddata)
+
+
+//using arrow to find data
+var finddataarrow=age.find(a=> 16<a)
+console.log("arrow",finddataarrow)
+
+//using filter
+ var filterdata=age.filter(b=>b>16)
+ console.log("filter",filterdata)
+
+ //using map
+
+ var mapdata=age.map(c=>c+5)
+ console.log("map",mapdata)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky header</title>
+    <style>
+        body{
+            height: 1900px;
+        }
+        header{
+            background: red; padding: 90px; transition: 0.9s; position: fixed; width: 100%; top: 0; left: 0;
+        }
+        .sticky{
+            background: orange;padding: 90px 90px;
+        }
+.b{ display: none; width: 90px;}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://broadwayinfosys.com/uploads/logo/1705900306_15549.svg" alt="" class="a">
+        <img src="https://broadwayinfosys.com/uploads/logo/1667276492.logo-design-small.svg" alt="" class="b">
+    </header>
+    <script>
+        window.addEventListener('scroll', ()=>{
+            let x=scrollY
+            console.log(x)
+            if(x>150)
+            {
+                document.querySelector('header').classList.add('sticky');
+                document.querySelector('.a').style.display='none';
+                document.querySelector('.b').style.display='block'
+            }
+            else{
+                document.querySelector('header').classList.remove('sticky');
+                document.querySelector('.a').style.display='block';
+                document.querySelector('.b').style.display='none'
+            }
+
+        })
+    </script>
+    
+</body>
+</html>

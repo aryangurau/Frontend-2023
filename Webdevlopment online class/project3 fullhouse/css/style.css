@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.top i {
+  color: white;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  line-height: 1.7;
+  color: #d8d6d6;
+}
+
+.top {
+  background: #1a2231;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+.con {
+  max-width: 1290px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top a {
+  color: white;
+}
+
+.top ul {
+  display: flex;
+  gap: 20px;
+}
+
+header {
+  padding: 25px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn {
+  border: 1px solid #dc363c;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: #dc363c;
+  color: white;
+}
+
+.gap {
+  gap: 30px;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.login span {
+  color: #999;
+}
+
+.login:hover i {
+  color: red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: white;
+}
+
+.banner-content h3 {
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.tabs-content {
+  background: #1a2231;
+  padding: 30px;
+  margin-top: 15px;
+  color: white;
+  position: relative;
+}
+.tabs-content input,
+.tabs-content select {
+  width: 450px;
+  height: 45px;
+}
+
+.search {
+  position: relative;
+  top: -40px;
+}
+
+.tabs-title ul {
+  display: flex;
+  gap: 20px;
+}
+
+.tabs-title ul a {
+  padding: 14px 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+}
+
+.button {
+  background-color: #dc363c;
+  border-radius: 3px;
+  min-width: 150px;
+  min-height: 45px;
+  position: absolute;
+  top: 56px;
+  right: 25px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* .button a {
+    color: white;
+    font-weight: 700;
+   
+    text-align: center;
+} */
+
+.active a {
+  background: #dc363c !important;
+}
+
+.featured {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.featured h4 {
+  font-size: 20px;
+  padding: ;
+}
+
+.gap-40 {
+  gap: 140px;
+}
+
+.property {
+  background-color: #f5f8fc;
+  padding: 50px 0;
+}
+
+.title {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.title h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.f {
+  position: absolute;
+  top: 10px;
+  background: #dc363c;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.c {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 3px;
+}
+
+.c:hover {
+  background: #dc363c;
+  color: white;
+}
+
+.card-box {
+  width: 32%;
+  background: white;
+  padding: 10px;
+}
+
+.d {
+  position: absolute;
+  width: 100%;
+  background: black;
+  padding: 10px;
+  color: white;
+  bottom: 0;
+}
+
+.d ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 30px 0;
+}
+
+.price .border {
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+}
+
+.price {
+  font-size: 12px;
+  padding: 30px 0 0 0;
+}
+
+.red {
+  color: red;
+}
+
+.card-foot {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.profile:hover span {
+  color: red;
+}
+
+.cta {
+  background: linear-gradient(rgba(15, 1, 1, 0.234), rgba(1, 25, 1, 0.814)),
+    url(../img/property-01-1024x469.jpg);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 10% 6%;
+}
+
+.cta h2 {
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.register-btn {
+  position: absolute;
+  left: 41%;
+  background: #dc363c;
+  padding: 8px 20px;
+  font-size: 20px;
+  border-radius: 6px;
+  width: 200px;
+  height: 45px;
+}
+
+.register-btn:hover {
+  background: linear-gradient(
+    rgba(38, 0, 255, 0.467),
+    rgba(241, 244, 241, 0.615)
+  );
+}
+
+.register-btn a {
+  color: white;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 50px 0;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer li {
+  line-height: 25px;
+}
+
+footer a {
+  color: white;
+}
+
+.passive:hover i,
+.passive:hover a {
+  color: red;
+}
+
+.brands {
+  background: #ffffff;
+  border-top: 1px solid black;
+  min-height: 110px;
+  position: relative;
+}
+
+.box {
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(
+    rgba(0, 128, 0, 0.512),
+    rgba(255, 0, 0, 0.441),
+    rgba(128, 0, 128, 0.412),
+    aqua
+  );
+  transition: 0.5s;
+  transform: perspective(1000px) translateZ(0px);
+}
+
+.box:hover {
+  transform: perspective(1000px) translateZ(90px);
+}
+
+/* .list {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: rgb(255, 255, 253);
+    transition: 0.9s;
+    transform:  scaleZ(0) rotateX(30deg);
+}
+
+.list:hover {
+    transform:  scaleZ(2) rotateX(30deg);
+} */
+nav span {
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .flex {
+    flex-direction: column;
+  }
+  .card-box,
+  footer .flex > div {
+    width: 100%;
+  }
+  .con {
+    padding: 0 15px;
+    margin-right: 0;
+  }
+  nav span {
+    display: block;
+  }
+  nav span {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+  }
+  nav ul {
+    display: none;
+  }
+  .top {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .tabs-content input,
+  .tabs-content select {
+    width: 100%;
+  }
+  .login {
+    position: absolute;
+    top: 20%;
+    left: 4%;
+  }
+  .btn {
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    border-radius: 5px;
+    min-width: 20px;
+  }
+  .banner-content h3 {
+    font-size: 20px;
+  }
+  .banner-content h2 {
+    display: none;
+  }
+  .banner-content p {
+    display: none;
+  }
+  .brands > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .register-btn {
+    position: absolute;
+    left: 28%;
+  }
+  .button {
+    position: absolute;
+    top: 80%;
+  }
+
+  /* @media(min-width:481px) and (max-width:900px)
+{
+ */
+}

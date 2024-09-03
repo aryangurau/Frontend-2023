@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in js and DOM</title>
+</head>
+<body>
+    <h1>This is Demo</h1>
+    <button onclick="document.querySelector('h1').innerHTML='This is Next Demo' ">
+    change text
+    </button>
+
+    <h2 class="next">This is Demo</h2>
+    <button class="click" onclick= changenext()> change text </button>
+    <script>
+        function changenext()
+        {
+            if(document.querySelector('h2').innerHTML=='This is Demo' )
+            {
+                document.querySelector('.next').innerHTML='This is Next Demo'
+                document.querySelector('.click').innerHTML='previous'
+
+            }
+            else
+            {
+                document.querySelector('.next').innerHTML='This is Demo'
+                document.querySelector('.click').innerHTML='change text'
+            }
+        }
+    </script>
+    
+    <br>
+    
+    <img width="200" src="https://th.bing.com/th/id/R.1dd880acbd39ff6c519ac5e630fec35a?rik=QhFh%2b502XtzrXg&pid=ImgRaw&r=0" alt="" id="image">
+
+    <button onclick="document.querySelector('#image').src='https://th.bing.com/th/id/R.010edbcb0206d4bc24ddcccd1fc307cd?rik=vyYRWmr9OvrOsA&riu=http%3a%2f%2fallpicts.in%2fwp-content%2fuploads%2f2015%2f07%2fBeautiful-Nature-Wallpaper-with-Two-Lotus-Flowers-in-Pink.jpg&ehk=fAzo4nd97vUOJugZ9Y5IT5Ia5JhQC9fK0yQxLVJS1iA%3d&risl=&pid=ImgRaw&r=0'"> change image</button>
+
+    <hr>
+
+    <input type="password" class="b">
+    <button class="btn" onclick="abc()">Show</button>
+
+    <script>
+        function abc()
+        {
+            if(document.querySelector('.b').type=='password')
+            {
+                document.querySelector('.b').type='text'
+                document.querySelector('.btn').innerHTML='hide'
+
+            }
+            else
+            {
+                document.querySelector('.b').type='password'
+                document.querySelector('.btn').innerHTML='Show'
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <form action="thank.html" method="get">
+        <fieldset>
+            <legend>HTML FORM</legend>
+        <label for="fname">first name</label>
+        <input type="text" name="fname" id="fname">
+        <label for="Email">Email</label>
+        <input type="Email" name="Email" id="Email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+
+        <hr>
+        <!---radio buttons-->
+        Enter Gender <input type="radio" name="gender" value="boys" id="m">
+        <label for="m">Male</label>
+        <input type="radio" name="gender" value="girls" id="f">
+        <label for="f">female</label>
+        <hr>
+        select country <select name="countrylist">
+
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="uSA">USA</option>
+            <option value="canada">Canada</option>
+            
+           
+        </select>
+        <hr>
+        <!--option group in select-->
+Food: <select name="food" >
+    <optgroup label="fruits">
+        <option>Mango</option>
+        <option>apple</option>
+    </optgroup>
+
+    <optgroup label="Vegetables">
+        <option>Tomato</option>
+        <option>Potato</option>
+    </optgroup>
+
+</select>
+
+
+
+<hr>
+<label for="datalist">country datalist </label>
+<input type="text" name="conlist" list="country" id="datalist">
+<datalist id="country">
+   <option>Nepal</option><option>Bhutan</option><option>india</option><option>canada</option><option>usa</option><option>netherland</option>
+
+</datalist>
+<hr>
+<label for="Message">Message:</label>
+ <textarea name="editor" rows="10" id="Message"></textarea>
+
+<hr>
+
+courses <input type="checkbox" name="courses" value="php">PHP
+<input type="checkbox" name="courses" value="web">web
+<input type="checkbox" name="courses" value="MERN">MERN
+<input type="checkbox" name="courses" value="JAVA">JAVA
+
+choose brand: <select name="brand">
+    <option >rolls royace</option>
+    <option >Ducati</option>
+</select>
+        <button>submit</button>
+    </fieldset>
+
+    </form>
+
+</body>
+
+</html>
